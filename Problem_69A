@@ -1,0 +1,14 @@
+n = int(input())
+l1 = []
+for i in range(n):
+    a = list(map(int,input("\n").strip().split()))[:3]
+    l1.append(a)
+x = y = z = 0
+for i in range(n):
+    x = x + l1[i][0]
+    y = y + l1[i][1]
+    z = z + l1[i][2]  
+if x == y == z == 0:
+    print("YES")
+else:
+    print("NO")
